@@ -1,0 +1,14 @@
+.product-inline {
+  width: 247px;
+  display: inline-block;
+  text-align: center;
+  margin-left: -.36em;
+  background-color: #68b738;
+  &:nth-child(4n+1){
+    margin-left: 0;
+  }
+}
+.product-inline__link {
+  display: block;
+}
+

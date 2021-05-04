@@ -1,0 +1,35 @@
+@mixin text-sets($size, $height, $weight:normal) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin clearfix {
+  &::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+@mixin nav-text {
+  a {
+    @include text-sets(16px, 16px, bold);
+    color: #cdcdcd;
+
+    &:hover {
+      color: hsla(0, 0%, 80%, 0.6);
+    }
+
+    &:active {
+      color: hsla(0, 0%, 80%, 0.3);
+    }
+  }
+}
+

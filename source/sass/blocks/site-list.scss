@@ -1,0 +1,14 @@
+.site-list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8%;
+}
+
+.site-list__item {
+  padding: 10px 0;
+  @include nav-text;
+  &--catalog {
+    position: relative;
+  }
+}

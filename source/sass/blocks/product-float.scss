@@ -1,0 +1,13 @@
+.product-float {
+  float: left;
+  width: calc((100% - 20px * 4) / 4);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.product-float__title {
+  text-align: center;
+}
+.product-float__link {
+  display: block;
+}

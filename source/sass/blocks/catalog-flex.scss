@@ -1,0 +1,12 @@
+.catalog-flex {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: $margin-bottom;
+}
+.catalog-flex__row {
+  @include list-reset;
+  display: flex;
+  min-height: 450px;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}

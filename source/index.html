@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тестовое задание 1</title>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="content-wrapper">
+  <header class="header">
+    <nav class="main-nav">
+      <ul class="main-nav__catalog-list site-list">
+        <li class="site-list__item"><a href="">Информация</a></li>
+        <li class="site-list__item site-list__item--catalog">
+          <a href="" tabindex="0">Каталог</a>
+          <ul class="catalog-list">
+            <li class="catalog-list__item">
+              <a href="#coats" class="catalog-list__item-link catalog-list__item-link--coats" tabindex="0">Верхняя одежда</a>
+            </li>
+            <li class="catalog-list__item">
+              <a href="#pants" class="catalog-list__item-link catalog-list__item-link--pants" tabindex="0">Штаны</a>
+            </li>
+            <li class="catalog-list__item">
+              <a href="#shirts" class="catalog-list__item-link catalog-list__item-link--shirts" tabindex="0">Водолазки и рубашки</a>
+            </li>
+          </ul>
+        </li>
+        <li class="site-list__item"><a href="">Отзывы</a></li>
+        <li class="site-list__item"><a href="">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Решение по ТЗ</h1>
+    <section class="flex">
+      <h2 class="flex__title title">Сетка каталога - flexbox</h2>
+      <div сlass="catalog-flex" id="catalog">
+        <ul class="catalog-flex__row">
+          <li class="product-flex product-flex--align">
+            <h3 class="product-flex__title product-title"><a href="#">Cумка</a></h3>
+            <a class="product-flex__link" href="#">
+              <img class="product-flex__image" src="img/product-flex.jpg" width="254" height="310" alt="Cумка">
+            </a>
+          </li>
+          <li class="product-flex">
+            <h3 class="product-flex__title product-title"><a href="#">Джинсы</a></h3>
+            <a class="product-flex__link" href="#">
+              <img class="product-flex__image" src="img/product-flex.jpg" width="254" height="310" alt="Джинсы">
+            </a>
+          </li>
+          <li class="product-flex">
+            <h3 class="product-flex__title product-title"><a href="#">Ремень</a></h3>
+            <a class="product-flex__link" href="#">
+              <img class="product-flex__image" src="img/product-flex.jpg" width="254" height="310" alt="Ремень">
+            </a>
+          </li>
+          <li class="product-flex">
+            <h3 class="product-flex__title product-title"><a href="#">Пиджак</a></h3>
+            <a class="product-flex__link" href="#">
+              <img class="product-flex__image" src="img/product-flex.jpg" width="254" height="310" alt="Пиджак">
+            </a>
+          </li>
+        </ul>
+        <ul class="catalog-flex__row">
+          <li class="product-flex">
+            <h3 class="product-flex__title product-title"><a href="#">Брюки</a></h3>
+            <a class="product-flex__link" href="#">
+              <img class="product-flex__image" src="img/product-flex.jpg" width="254" height="310" alt="Брюки">
+            </a>
+          </li>
+          <li class="product-flex">
+            <h3 class="product-flex__title product-title"><a href="#">Шарф</a></h3>
+            <a class="product-flex__link" href="#">
+              <img class="product-flex__image" src="img/product-flex.jpg" width="254" height="310" alt="Шарф">
+            </a>
+          </li>
+          <li class="product-flex">
+            <h3 class="product-flex__title product-title"><a href="#">Пальто</a></h3>
+            <a class="product-flex__link" href="#">
+              <img class="product-flex__image" src="img/product-flex.jpg" width="254" height="310" alt="Пальто">
+            </a>
+          </li>
+          <li class="product-flex">
+            <h3 class="product-flex__title product-title"><a href="#">Кошелек</a></h3>
+            <a class="product-flex__link" href="#">
+              <img class="product-flex__image" src="img/product-flex.jpg" width="254" height="310" alt="Кошелек">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="inline">
+      <h2 class="inline__title title">Сетка каталога - inline-block</h2>
+      <ul class="catalog-inline">
+        <li class="product-inline">
+          <h3 class="product-inline__title product-title"><a href="#">Cумка</a></h3>
+          <a class="product-inline__link" href="#">
+            <img class="product-inline__image" src="img/product-inline.png" width="247" height="211" alt="Cумка">
+          </a>
+        </li>
+        <li class="product-inline">
+          <h3 class="product-inline__title product-title"><a href="#">Джинсы</a></h3>
+          <a class="product-inline__link" href="#">
+            <img class="product-inline__image" src="img/product-inline.png" width="247" height="211" alt="Джинсы">
+          </a>
+        </li>
+        <li class="product-inline">
+          <h3 class="product-inline__title product-title"><a href="#">Ремень</a></h3>
+          <a class="product-inline__link" href="#">
+            <img class="product-inline__image" src="img/product-inline.png" width="247" height="211" alt="Ремень">
+          </a>
+        </li>
+        <li class="product-inline">
+          <h3 class="product-inline__title product-title"><a href="#">Пиджак</a></h3>
+          <a class="product-inline__link" href="#">
+            <img class="product-inline__image" src="img/product-inline.png" width="247" height="211" alt="Пиджак">
+          </a>
+        </li>
+        <li class="product-inline">
+          <h3 class="product-inline__title product-title"><a href="#">Брюки</a></h3>
+          <a class="product-inline__link" href="#">
+            <img class="product-inline__image" src="img/product-inline.png" width="247" height="211" alt="Брюки">
+          </a>
+        </li>
+        <li class="product-inline">
+          <h3 class="product-inline__title product-title"><a href="#">Шарф</a></h3>
+          <a class="product-inline__link" href="#">
+            <img class="product-inline__image" src="img/product-inline.png" width="247" height="211" alt="Шарф">
+          </a>
+        </li>
+        <li class="product-inline">
+          <h3 class="product-inline__title product-title"><a href="#">Пальто</a></h3>
+          <a class="product-inline__link" href="#">
+            <img class="product-inline__image" src="img/product-inline.png" width="247" height="211" alt="Пальто">
+          </a>
+        </li>
+        <li class="product-inline">
+          <h3 class="product-inline__title product-title"><a href="#">Кошелек</a></h3>
+          <a class="product-inline__link" href="#">
+            <img class="product-inline__image" src="img/product-inline.png" width="247" height="211" alt="Кошелек">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="float">
+      <h2 class="float__title title">Сетка каталога - float</h2>
+      <ul class="catalog-float">
+        <li class="product-float">
+          <h3 class="product-float__title product-title"><a href="#">Cумка</a></h3>
+          <a class="product-float__link" href="#">
+            <img class="product-float__image" src="img/product-float.jpg" width="247" height="250" alt="Cумка">
+          </a>
+        </li>
+        <li class="product-float">
+          <h3 class="product-float__title product-title"><a href="#">Джинсы</a></h3>
+          <a class="product-float__link" href="#">
+            <img class="product-float__image" src="img/product-float.jpg" width="247" height="250" alt="Джинсы">
+          </a>
+        </li>
+        <li class="product-float">
+          <h3 class="product-float__title product-title"><a href="#">Ремень</a></h3>
+          <a class="product-float__link" href="#">
+            <img class="product-float__image" src="img/product-float.jpg" width="247" height="250" alt="Ремень">
+          </a>
+        </li>
+        <li class="product-float">
+          <h3 class="product-float__title product-title"><a href="#">Пиджак</a></h3>
+          <a class="product-float__link" href="#">
+            <img class="product-float__image" src="img/product-float.jpg" width="247" height="250" alt="Пиджак">
+          </a>
+        </li>
+        <li class="product-float">
+          <h3 class="product-float__title product-title"><a href="#">Брюки</a></h3>
+          <a class="product-float__link" href="#">
+            <img class="product-float__image" src="img/product-float.jpg" width="247" height="250" alt="Брюки">
+          </a>
+        </li>
+        <li class="product-float">
+          <h3 class="product-float__title product-title"><a href="#">Шарф</a></h3>
+          <a class="product-float__link" href="#">
+            <img class="product-float__image" src="img/product-float.jpg" width="247" height="250" alt="Шарф">
+          </a>
+        </li>
+        <li class="product-float">
+          <h3 class="product-float__title product-title"><a href="#">Пальто</a></h3>
+          <a class="product-float__link" href="#">
+            <img class="product-float__image" src="img/product-float.jpg" width="247" height="250" alt="Пальто">
+          </a>
+        </li>
+        <li class="product-float">
+          <h3 class="product-float__title product-title"><a href="#">Кошелек</a></h3>
+          <a class="product-float__link" href="#">
+            <img class="product-float__image" src="img/product-float.jpg" width="247" height="250" alt="Кошелек">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="table">
+      <h2 class="table__title title">Сетка каталога - table</h2>
+      <table class="catalog-table">
+        <tr class="catalog-table__tr">
+          <td class="catalog-table__td">
+            <div class="product-table">
+              <h3 class="product-table__title product-title"><a href="#">Cумка</a></h3>
+              <a class="product-table__link" href="#">
+                <img class="product-table__image" src="img/product-table.jpg" width="360" height="360" alt="Cумка">
+              </a>
+            </div>
+          </td>
+          <td class="catalog-table__td">
+            <div class="product-table">
+              <h3 class="product-table__title product-title"><a href="#">Джинсы</a></h3>
+              <a class="product-table__link" href="#">
+                <img class="product-table__image" src="img/product-table.jpg" width="360" height="360" alt="Джинсы">
+              </a>
+            </div>
+          </td>
+          <td class="catalog-table__td">
+            <div class="product-table">
+              <h3 class="product-table__title product-title"><a href="#">Ремень</a></h3>
+              <a class="product-table__link" href="#">
+                <img class="product-table__image" src="img/product-table.jpg" width="360" height="360" alt="Ремень">
+              </a>
+            </div>
+          </td>
+          <td class="catalog-table__td">
+            <div class="product-table">
+              <h3 class="product-table__title product-title"><a href="#">Пиджак</a></h3>
+              <a class="product-table__link" href="#">
+                <img class="product-table__image" src="img/product-table.jpg" width="360" height="360" alt="Пиджак">
+              </a>
+            </div>
+          </td>
+        </tr>
+        <tr class="catalog-table__tr">
+          <td class="catalog-table__td">
+            <div class="product-table">
+              <h3 class="product-table__title product-title"><a href="#">Брюки</a></h3>
+              <a class="product-table__link" href="#">
+                <img class="product-table__image" src="img/product-table.jpg" width="360" height="360" alt="Брюки">
+              </a>
+            </div>
+          </td>
+          <td class="catalog-table__td">
+            <div class="product-table">
+              <h3 class="product-table__title product-title"><a href="#">Шарф</a></h3>
+              <a class="product-table__link" href="#">
+                <img class="product-table__image" src="img/product-table.jpg" width="360" height="360" alt="Шарф">
+              </a>
+            </div>
+          </td>
+          <td class="catalog-table__td">
+            <div class="product-table">
+              <h3 class="product-table__title product-title"><a href="#">Пальто</a></h3>
+              <a class="product-table__link" href="#">
+                <img class="product-table__image" src="img/product-table.jpg" width="360" height="360" alt="Пальто">
+              </a>
+            </div>
+          </td>
+          <td class="catalog-table__td">
+            <div class="product-table">
+              <h3 class="product-table__title product-title"><a href="#">Кошелек</a></h3>
+              <a class="product-table__link" href="#">
+                <img class="product-table__image" src="img/product-table.jpg" width="360" height="360" alt="Кошелек">
+              </a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section class="div-grid">
+      <h2 class="div-grid__title title">Сетка каталога - div</h2>
+      <div class="catalog-div">
+        <div class="product-div">
+          <h3 class="product-div__title product-title"><a href="#">Cумка</a></h3>
+          <a class="product-div__link" href="#">
+            <img class="product-div__image" src="img/product-div.jpg" width="245" height="245" alt="Cумка">
+          </a>
+        </div>
+        <div class="product-div">
+          <h3 class="product-div__title product-title"><a href="#">Джинсы</a></h3>
+          <a class="product-div__link" href="#">
+            <img class="product-div__image" src="img/product-div.jpg" width="245" height="245" alt="Джинсы">
+          </a>
+        </div>
+        <div class="product-div">
+          <h3 class="product-div__title product-title"><a href="#">Ремень</a></h3>
+          <a class="product-div__link" href="#">
+            <img class="product-div__image" src="img/product-div.jpg" width="245" height="245" alt="Ремень">
+          </a>
+        </div>
+        <div class="product-div">
+          <h3 class="product-div__title product-title"><a href="#">Пиджак</a></h3>
+          <a class="product-div__link" href="#">
+            <img class="product-div__image" src="img/product-div.jpg" width="245" height="245" alt="Пиджак">
+          </a>
+        </div>
+        <div class="product-div">
+          <h3 class="product-div__title product-title"><a href="#">Брюки</a></h3>
+          <a class="product-div__link" href="#">
+            <img class="product-div__image" src="img/product-div.jpg" width="245" height="245" alt="Брюки">
+          </a>
+        </div>
+        <div class="product-div">
+          <h3 class="product-div__title product-title"><a href="#">Шарф</a></h3>
+          <a class="product-div__link" href="#">
+            <img class="product-div__image" src="img/product-div.jpg" width="245" height="245" alt="Шарф">
+          </a>
+        </div>
+        <div class="product-div">
+          <h3 class="product-div__title product-title"><a href="#">Пальто</a></h3>
+          <a class="product-div__link" href="#">
+            <img class="product-div__image" src="img/product-div.jpg" width="245" height="245" alt="Пальто">
+          </a>
+        </div>
+        <div class="product-div">
+          <h3 class="product-div__title product-title"><a href="#">Кошелек</a></h3>
+          <a class="product-div__link" href="#">
+            <img class="product-div__image" src="img/product-div.jpg" width="245" height="245" alt="Кошелек">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <template id="submenu">
+    <ul class="catalog-list__submenu">
+      <li class="catalog-list__submenu-link"><a href="#"></a></li>
+    </ul>
+  </template>
+  <footer class="footer"></footer>
+</div>
+<script src="js/vendor-min.js"></script>
+<script src="js/data-min.js"></script>
+<script src="js/submenu-min.js"></script>
+<script src="js/navigation-min.js"></script>
+</body>
+</html>
